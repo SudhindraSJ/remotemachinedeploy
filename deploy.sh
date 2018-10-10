@@ -18,7 +18,8 @@ sshpass -p "paytmuserp" ssh paytmuserp@172.17.0.5 "JAVA_HOME=/home/paytmuserp/di
 
 
 
+else echo "invalid choice"
+
+
 fi
-
-
 
