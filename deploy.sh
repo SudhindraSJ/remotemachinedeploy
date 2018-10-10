@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $ENVIRONMENTV = "QAA" ];then
+if [ $ENVIRONMENTV = "QAA" ] then
 sshpass -p "tacouser" scp target/paytmemart.war tacouser@172.17.0.4:/home/tacouser/distros/apache-tomcat/webapps
          echo "Starting tomcat server in $i QAA server"
          sleep 3
