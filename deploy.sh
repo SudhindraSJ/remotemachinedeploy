@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ $ENVIRONMENTV = "QAA" ]; then
 sshpass -p "tacouser" scp target/paytmemart.war tacouser@172.17.0.4:/home/tacouser/distros/apache-tomcat/webapps
