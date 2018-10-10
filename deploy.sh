@@ -13,6 +13,9 @@ sshpass -p "paytmuserp" scp target/paytmemart.war paytmuserp@172.17.0.5:/home/pa
          echo "Starting tomcat server in $i SITT server"
          sleep 3
 sshpass -p "paytmuserp" ssh paytmuserp@172.17.0.5 "JAVA_HOME=/home/paytmuserp/distros/jdk1.8"/home/paytmuserp/distros/apache-tomcat/bin/startup.sh
+else
+   echo "None of the condition met"
+
 fi
 
 
