@@ -2,8 +2,8 @@
 
 
 if [ $ENVIRONMENTV = "QAA" ]; then
-
-for i in 'cat IPs.txt' 
+var=cat IPs.txt
+ for i in $var 
 
  do
 
@@ -16,7 +16,8 @@ done
 
 elif [ $ENVIRONMENTV = "SITT" ]; then
 
-for i in 'cat IPs1.txt' 
+var1=cat IPs1.txt
+for i in $var1 
 
  do
 sshpass -p "paytmuserp" scp target/paytmemart.war paytmuserp@$i:/home/paytmuserp/distros/apache-tomcat/webapps
