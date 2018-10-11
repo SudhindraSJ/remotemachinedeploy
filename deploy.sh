@@ -2,7 +2,7 @@
 
 
 if [ $ENVIRONMENTV = "QAA" ]; then
-var=cat IPs.txt
+var='cat IPs.txt'
  for i in $var 
 
  do
@@ -16,7 +16,7 @@ done
 
 elif [ $ENVIRONMENTV = "SITT" ]; then
 
-var1=cat IPs1.txt
+var1='cat IPs1.txt'
 for i in $var1 
 
  do
